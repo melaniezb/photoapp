@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "751422394764",
+    "firebase_url": "https://photoapp-mel.firebaseio.com",
+    "project_id": "photoapp-mel",
+    "storage_bucket": "photoapp-mel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751422394764:android:2ff692addbdea146",
+        "android_client_info": {
+          "package_name": "com.example.melaniez.photoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751422394764-fkm3i7lcem1ab6caomnjd217h08jpigu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.melaniez.photoapp",
+            "certificate_hash": "d494d93fb631fcb69844e18ad8d878f8c10d4ddf"
+          }
+        },
+        {
+          "client_id": "751422394764-90m4ecmc8c1vbiegsqpqeocbvqa3rhb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkenidenI4uBsOdI4pE61cDMcV2yBPR14"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751422394764-90m4ecmc8c1vbiegsqpqeocbvqa3rhb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

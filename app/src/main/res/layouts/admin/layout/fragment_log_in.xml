@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_narrow">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_instagram_logo"/>
+
+    <EditText
+        android:id="@+id/edit_text_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/faded_white_rectangle_rounded_corners"
+        android:layout_marginTop="24dp"
+        android:paddingStart="@dimen/margin_extra_narrow"
+        android:hint="Phone number, username or email address"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/faded_white_rectangle_rounded_corners"
+        android:layout_marginTop="@dimen/margin_extra_narrow"
+        android:paddingStart="@dimen/margin_extra_narrow"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/text_forgotten_password"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="@dimen/margin_extra_narrow"
+        android:gravity="center_vertical|end"
+        android:text="Forgotten password?"
+        android:textColor="@color/settings_blue"/>
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/blue_rectangle_rounded_corners"
+        android:layout_marginTop="@dimen/margin_extra_narrow"
+        android:textAllCaps="false"
+        android:text="Log In"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_narrow"
+        android:gravity="center"
+        android:text="------------------------------------- OR -------------------------------------"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue as Jojo Zong"
+        android:textColor="@color/settings_blue"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_facebook_logo_blue_square"/>
+
+
+
+</LinearLayout>

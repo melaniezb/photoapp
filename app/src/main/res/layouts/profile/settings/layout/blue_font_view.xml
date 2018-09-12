@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- if textview is not wrapped by a viewGroup-->
+<FrameLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/blue_font_view_text"
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="16sp"
+        android:textColor="@color/settings_blue"
+        android:paddingStart="@dimen/margin_narrow"
+        android:paddingEnd="@dimen/margin_narrow"/>
+</FrameLayout>

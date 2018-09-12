@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+    <string name="text_posts">Posts</string>
+    <string name="text_followers">Followers</string>
+    <string name="text_following">Following</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="activity_admin_login_text1">Don\'t have an account?</string>
+    <string name="activity_admin_login_text2">Sign Up</string>
+
+    <string name="activity_admin_signup_text1">Already have an account?</string>
+    <string name="activity_admin_signup_text2">Sign In</string>
+
+    <string name="privacy_policy">By signing up, you agree to our Terms &amp; privacy Policy.</string>
+
+    <string name="re_authentication_reminder">Changes have been saved except for your email address . To update email address, enter your password:</string>
+</resources>

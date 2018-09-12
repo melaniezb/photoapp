@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- top bar (not scrollable) -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:contentInsetStart="0dp"
+        android:background="@drawable/faded_white_rectangle_grey_bottom_border">
+
+        <!--RelativeLayout here makes re-positioning the children possible-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile_settings_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Options"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize='18sp' />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--***************************** FOLLOW PEOPLE *****************************-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_narrow"
+                android:text="Follow people"
+                android:textSize='16sp'
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id='@+id/settings_listview_people'
+                android:divider="@null"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_grey_bottom_border"/>
+
+            <!--******************************** ACCOUNT ********************************-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_narrow"
+                android:text="Account"
+                android:textSize='16sp'
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id='@+id/settings_listview_account'
+                android:divider="@null"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Switch
+                android:text="Private Account"
+                android:textSize='16sp'
+                android:padding="@dimen/margin_narrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_grey_bottom_border"/>
+
+            <!--****************************** SETTINGS ******************************-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Privacy and security"
+                android:textSize='16sp'
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id="@+id/settings_listview_privacy"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Switch
+                android:text="Save Original Photos"
+                android:textSize='16sp'
+                android:padding="@dimen/margin_narrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:text="Vibrate for notifications"
+                android:textSize='16sp'
+                android:padding="@dimen/margin_narrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_grey_bottom_border"/>
+
+        <!--******************************** NOTIFICATIONS ********************************-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Notifications"
+                android:textSize='16sp'
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id='@+id/settings_listview_notifications'
+                android:divider="@null"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_grey_bottom_border"/>
+
+        <!--******************************** ABOUT ********************************-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="About"
+                android:textSize='16sp'
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id='@+id/settings_listview_about'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:background="@drawable/white_rectangle_grey_bottom_border"/>
+
+        <!--******************************** LOGINS ********************************-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="Logins"
+                android:textSize='16sp'
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id='@+id/settings_listview_logins'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

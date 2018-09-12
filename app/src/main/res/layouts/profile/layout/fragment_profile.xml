@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:contentInsetStart="0dp"
+        android:background="@drawable/faded_white_rectangle_grey_bottom_border">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/margin_narrow"
+            tools:text="JINGJING.BERNAL"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/layout_profile_upper_part"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_extra_narrow"
+        android:paddingStart="@dimen/margin_narrow"
+        android:paddingEnd="@dimen/margin_narrow"
+        android:paddingBottom="@dimen/margin_narrow"
+        android:background="@drawable/white_rectangle_grey_bottom_border">
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Jingjing Bernal"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            tools:text="The misadventures of an Android maniac."
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/hyperlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="https://twitter.com/jayjay_melanie"
+            android:textColor="@color/hyperlink_blue" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/profile_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/profile_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
